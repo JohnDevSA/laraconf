@@ -1,5 +1,36 @@
 models:
-  # ...
+  Conference:
+      name: string
+      description: string
+      start_date: datetime
+      end_date: datetime
+      status: string
+      region: string
+      venue_id: unsignedInteger
+      relationships:
+        belongsTo: Venue
+        belongsToMany: Speaker
 
+  Venue:
+      name: string
+      city: string
+      country: string
+      postal_code: string
+      relationships:
+        hasMany: Conference, Talk
+
+  Speaker:
+      name: string
+      email: string
+      bio: text
+      twitter_handle: string
+      relationships:
+        hasMany: Conference
+
+  Talk:
+      title: string
+      abstract: text
+      relationships:
+        hasMany: Conference    
 controllers:
   # ...
