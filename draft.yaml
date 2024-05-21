@@ -9,7 +9,7 @@ models:
       venue_id: unsignedInteger
       relationships:
         belongsTo: Venue
-        belongsToMany: Speaker
+        belongsToMany: Speaker,Talk
 
   Venue:
       name: string
