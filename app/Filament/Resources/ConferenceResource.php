@@ -27,6 +27,7 @@ class ConferenceResource extends Resource
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('description')
+                    ->label('DescriptionZ')    
                     ->required()
                     ->maxLength(255),
                 Forms\Components\DateTimePicker::make('start_date')
