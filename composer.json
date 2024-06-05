@@ -13,6 +13,7 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
+        "friendsofphp/php-cs-fixer": "^3.57",
         "laravel-shift/blueprint": "^2.10",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.26",
@@ -20,6 +21,7 @@
         "nunomaduro/collision": "^8.0",
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
+        "phpro/grumphp-shim": "^2.5",
         "spatie/laravel-ignition": "^2.4"
     },
     "autoload": {
@@ -63,7 +65,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "phpro/grumphp-shim": true
         }
     },
     "minimum-stability": "stable",

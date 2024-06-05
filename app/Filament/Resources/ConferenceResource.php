@@ -24,10 +24,11 @@ class ConferenceResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
+                    ->label('Conference Name')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('description')
-                    ->label('DescriptionZ')    
+                    ->label('DescriptionZ')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\DateTimePicker::make('start_date')
